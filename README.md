@@ -1,6 +1,8 @@
 # Cost Management System
-
 A comprehensive cost management system built with React, featuring invoice generation, tax calculation, and cost tracking capabilities.
+
+## 🚀 Live Demo
+The application is deployed and can be accessed here: [Cost Management System](https://moazosamaa.github.io/Cost-Management/)
 
 ## Features
 
@@ -11,6 +13,10 @@ A comprehensive cost management system built with React, featuring invoice gener
 - Real-time Tax Calculations
 - Modern, Responsive UI
 
+## Deployment URL : 
+```
+https://moazosamaa.github.io/Cost-Management/
+```
 ## Installation
 
 1. Clone the repository:
@@ -46,15 +52,3 @@ The application will be available at `http://localhost:3000`.
   - `/sdks` - SDK implementations
   - `/styles` - CSS styles
   - `/libs` - Utility libraries
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 

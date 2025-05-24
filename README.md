@@ -12,11 +12,6 @@ The application is deployed and can be accessed here: [Cost Management System](h
 - Invoice Due Reminders
 - Real-time Tax Calculations
 - Modern, Responsive UI
-
-## Deployment URL : 
-```
-https://moazosamaa.github.io/Cost-Management/
-```
 ## Installation
 
 1. Clone the repository:

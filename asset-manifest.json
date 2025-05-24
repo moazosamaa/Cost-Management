@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cost-Management/static/css/main.0722fb8e.css",
+    "main.js": "/Cost-Management/static/js/main.cb09203b.js",
+    "index.html": "/Cost-Management/index.html",
+    "main.0722fb8e.css.map": "/Cost-Management/static/css/main.0722fb8e.css.map",
+    "main.cb09203b.js.map": "/Cost-Management/static/js/main.cb09203b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0722fb8e.css",
+    "static/js/main.cb09203b.js"
+  ]
+}

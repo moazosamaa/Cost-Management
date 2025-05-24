@@ -1,0 +1,112 @@
+.tax-calculator {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.tax-calculator h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+select.form-control {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.calculation-result {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.calculation-result h3 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.calculation-result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calculation-result td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.calculation-result td:first-child {
+  font-weight: 500;
+  color: #555;
+}
+
+.calculation-result td:last-child {
+  text-align: right;
+}
+
+/* Checkbox styling */
+.form-group label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .tax-calculator {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .form-control {
+    font-size: 16px; /* Better for mobile input */
+  }
+} 

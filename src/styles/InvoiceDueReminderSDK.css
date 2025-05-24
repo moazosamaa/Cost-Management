@@ -1,0 +1,181 @@
+.invoice-reminder-sdk {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.invoice-reminder-sdk h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 1rem;
+}
+
+.invoice-reminder-sdk h3 {
+  color: #34495e;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.notifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.notification-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notification-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.notification-item h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 0.5rem;
+}
+
+.notification-item p {
+  margin: 0.5rem 0;
+  color: #576574;
+  font-size: 0.95rem;
+}
+
+.reminder-actions {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.reminder-actions form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.reminder-actions form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder-actions label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.reminder-actions input,
+.reminder-actions select {
+  padding: 0.75rem;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.reminder-actions input:focus,
+.reminder-actions select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.reminder-actions button {
+  grid-column: 1 / -1;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reminder-actions button:hover {
+  background-color: #2980b9;
+}
+
+.reminder-actions button:active {
+  transform: translateY(1px);
+}
+
+/* Status indicators */
+.notification-item .status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.notification-item[data-status="sent"] .status {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Notification type badges */
+.notification-item .type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.notification-item[data-type="email"] .type {
+  background-color: #3498db;
+  color: white;
+}
+
+.notification-item[data-type="sms"] .type {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.notification-item[data-type="in-app"] .type {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .invoice-reminder-sdk {
+    padding: 1rem;
+  }
+
+  .notifications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reminder-actions form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Empty state */
+.notifications-list:empty::after {
+  content: "No notifications yet";
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #95a5a6;
+  font-style: italic;
+  background: #f8f9fa;
+  border-radius: 8px;
+} 

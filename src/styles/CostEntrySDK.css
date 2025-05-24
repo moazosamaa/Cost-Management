@@ -1,0 +1,181 @@
+.cost-entry-sdk {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cost-entry-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cost-entry-header h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cost-entry-form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.cost-entries-list {
+  margin-top: 2rem;
+}
+
+.cost-entries-list h3 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.no-entries {
+  text-align: center;
+  padding: 2rem;
+  background: var(--background-light);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.cost-entry-item {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cost-entry-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.entry-header h4 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.entry-details p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.entry-details strong {
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.entry-timestamp {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.cost-amount {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.cost-date {
+  color: var(--text-secondary);
+}
+
+.cost-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--primary-color);
+  color: white;
+}
+
+.cost-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.cost-actions button {
+  padding: 0.5rem 1rem;
+}
+
+.cost-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--background-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.cost-summary h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .cost-entry-sdk {
+    padding: 1rem;
+  }
+  
+  .cost-entry-form {
+    padding: 1rem;
+  }
+  
+  .cost-entry-item {
+    padding: 1rem;
+  }
+} 
